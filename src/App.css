@@ -44,6 +44,7 @@ input:focus {
 
 .card .heading {
   margin-top: -1rem;
+  text-align: center;
   letter-spacing: 1px;
   padding: 0 10px;
   border-bottom: 1px solid #cccccc24;
@@ -109,7 +110,6 @@ input:focus {
   width: 150px;
   padding: 10px 0px 10px 40px;
   border-radius: 9999px;
-  /* border: solid 1px #333; */
   border: none;
   transition: all .2s ease-in-out;
   outline: none;
@@ -140,6 +140,28 @@ input:focus {
 }
 
 
+@media (max-width: 600px) {
+  .card {
+    max-width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: 90%;
+  }
+
+  .card .heading {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+  }
+
+  .card .temp-div {
+    margin-bottom: 1rem;
+  }
+
+  .card .temp-div p {
+    font-size: 2rem;
+  }
+}
+
 /* Social */
 
 .parent {
@@ -149,7 +171,7 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .child {
